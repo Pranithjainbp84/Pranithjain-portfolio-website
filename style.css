@@ -464,6 +464,13 @@ nav .fas {
         display: block;
         margin: 25px;
     }
+     .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .services-list div {
+        width: 100%;
+    }
 
 }
 
@@ -518,6 +525,13 @@ nav .fas {
     nav ul li {
         display: block;
         margin: 25px;
+    }
+     .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .services-list div {
+        width: 100%;
     }
 }
 
