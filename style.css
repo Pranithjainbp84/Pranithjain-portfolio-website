@@ -91,7 +91,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: rgb(244, 1, 1); /* Semi-transparent blue */
+   color: rgb(124, 124, 124); 
 }
 
 /* ----------ABOUT---------- */
