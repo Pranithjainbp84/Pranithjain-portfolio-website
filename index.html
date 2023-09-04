@@ -222,13 +222,20 @@
 	});
     </script>
 
-     <script>VanillaTilt.init(document.querySelector(".work-list"), {
-		max: 25,
-		speed: 400,
-        glare:true,
-        "max-glare":1,
-	});
-    </script>
+  <script>
+
+    const layers = document.querySelectorAll(".layer");
+  
+   
+    layers.forEach(layer => {
+      VanillaTilt.init(layer, {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    });
+  </script>
 
 </body>
 </html>
