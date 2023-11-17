@@ -17,13 +17,8 @@ body {
     --text-color: #ffffff;
 }
 
-body, h1 {
+body, h1, p {
     color: var(--text-color);
-}
-
-p {
-    color: var(--text-color);
-   text-align: justify;
 }
 
 
