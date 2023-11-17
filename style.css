@@ -19,7 +19,7 @@ body {
 
 body, h1, p {
     color: var(--text-color);
-    text-align: center
+    text-align: justify
 }
 
 
