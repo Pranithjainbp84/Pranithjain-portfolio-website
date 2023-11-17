@@ -194,22 +194,25 @@ width: 100%;
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .services-list div {
     position: relative;
-    width: 500px;
+    width: calc(100% - 60px); /* Adjusted width calculation to prevent overlap */
+    max-width: 500px; /* Set max-width for responsiveness */
     height: 500px;
-    background: linear-gradient rgba(255,255,255,0.1);
-    box-shadow: 20px 20px 20px 50px rgb(0, 0, 0 , 0, 0.5);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); /* Corrected linear-gradient syntax */
+    box-shadow: 20px 20px 20px 50px rgba(0, 0, 0, 0.5);
     padding: 40px;
     margin: 30px;
     font-size: 15px;
-    line-height: 30 px;
+    line-height: 1.5; /* Corrected line-height syntax */
     font-weight: 300;
     border-radius: 15px;
     transition: background 0.5s, transform 0.5s;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-left: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .services-list div i {
     font-size: 50px;
