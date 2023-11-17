@@ -17,9 +17,12 @@ body {
     --text-color: #ffffff;
 }
 
-body, h1, p {
+body, h1, {
     color: var(--text-color);
-    text-align: justify
+}
+p {
+    color: var(--text-color);
+   text-align: center;
 }
 
 
