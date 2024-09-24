@@ -19,10 +19,10 @@
                 <img src="" class="logo" alt="Logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
                 <i class="fas fa-bars"></i>
@@ -51,19 +51,19 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>IT Support</span><br>Expertise in managing email systems and troubleshooting IT issues.</li>
-                            <li><span>Cybersecurity</span><br>Knowledgeable in threat detection and incident response.</li>
-                            <li><span>Java</span><br>Proficient in Core Java, JDBC, Maven projects, OOPs, and Collections.</li>
-                            <li><span>Front-End</span><br>Skilled in HTML, CSS, and Responsive Design techniques.</li>
-                            <li><span>Databases</span><br>Proficient in MySQL databases.</li>
-                            <li><span>Python</span><br>Basic knowledge with an understanding of OOPs principles.</li>
+                            <li><span>IT Support:</span> Expertise in managing email systems and troubleshooting IT issues.</li>
+                            <li><span>Cybersecurity:</span> Knowledgeable in threat detection and incident response.</li>
+                            <li><span>Java:</span> Proficient in Core Java, JDBC, Maven projects, OOPs, and Collections.</li>
+                            <li><span>Front-End:</span> Skilled in HTML, CSS, and Responsive Design techniques.</li>
+                            <li><span>Databases:</span> Proficient in MySQL databases.</li>
+                            <li><span>Python:</span> Basic knowledge with an understanding of OOPs principles.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2019 - 2023</span><br>B.E from Visvesvaraya Technological University <br>6.6 CGPA (Upto 7th sem)</li>
-                            <li><span>2019</span><br>PUC from Pre-University Education <br>6.73 CGPA</li>
-                            <li><span>2017</span><br>SSLC from Karnataka Secondary Education Examination Board <br>9.26 CGPA</li>
+                            <li><span>2019 - 2023:</span> B.E from Visvesvaraya Technological University <br>6.6 CGPA (Upto 7th sem)</li>
+                            <li><span>2019:</span> PUC from Pre-University Education <br>6.73 CGPA</li>
+                            <li><span>2017:</span> SSLC from Karnataka Secondary Education Examination Board <br>9.26 CGPA</li>
                         </ul>
                     </div>
                 </div>
@@ -152,6 +152,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-contents');
+            const links = document.querySelectorAll('.tab-links');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active-tab');
+            });
+
+            links.forEach(link => {
+                link.classList.remove('active-link');
+            });
+
+            document.getElementById(tabName).classList.add('active-tab');
+            event.target.classList.add('active-link');
+        }
+    </script>
 </body>
 
 </html>
