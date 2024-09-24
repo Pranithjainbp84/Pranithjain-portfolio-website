@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00c1ff;
+    color: #ff6f00; /* Orange */
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff4081;
+    color: #ff4081; /* Fiery pink */
 }
 
 .header-text {
@@ -97,7 +97,7 @@ nav ul li a:hover {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #00c1ff;
+    color: #ff6f00; /* Orange */
 }
 
 .tab-titles {
@@ -111,11 +111,11 @@ nav ul li a:hover {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: #00c1ff;
+    color: #ff6f00; /* Orange */
 }
 
 .tab-links.active-link {
-    color: #ff4081;
+    color: #ff4081; /* Fiery pink */
 }
 
 .tab-links.active-link::after {
@@ -150,7 +150,7 @@ nav ul li a:hover {
 }
 
 .services-list div:hover {
-    background-color: rgba(238, 230, 230, 0.7);
+    background-color: rgba(255, 120, 0, 0.7); /* Light orange */
     transform: translateY(-10px);
 }
 
@@ -164,7 +164,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
-    color: #00c1ff;
+    color: #ff6f00; /* Orange */
 }
 
 .contact-row {
@@ -198,7 +198,7 @@ form textarea {
     background: #262626;
     padding: 15px;
     margin: 10px 0;
-    color: #00c1ff;
+    color: #ff6f00; /* Orange */
     font-size: 16px;
     border-radius: 6px;
     transition: background 0.3s, border-color 0.3s;
@@ -207,7 +207,7 @@ form textarea {
 form input:focus,
 form textarea:focus {
     background: #333;
-    border: 1px solid #00c1ff;
+    border: 1px solid #ff6f00; /* Orange */
 }
 
 .btn.btn2 {
@@ -223,7 +223,7 @@ form textarea:focus {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
-    color: #00c1ff;
+    color: #ff6f00; /* Orange */
 }
 
 .project-list {
@@ -256,6 +256,7 @@ form textarea:focus {
 .project-info h3 {
     margin-bottom: 10px;
     font-size: 24px;
+    color: #ff6f00; /* Orange */
 }
 
 .project-info p {
@@ -265,15 +266,15 @@ form textarea:focus {
 .btn.btn3 {
     display: inline-block;
     margin-top: 10px;
-    color: #00c1ff;
-    border: 1px solid #00c1ff;
+    color: #ff6f00; /* Orange */
+    border: 1px solid #ff6f00; /* Orange */
     padding: 10px 20px;
     border-radius: 6px;
     transition: background 0.3s, color 0.3s;
 }
 
 .btn.btn3:hover {
-    background: #00c1ff;
+    background: #ff6f00; /* Orange */
     color: #000;
 }
 
