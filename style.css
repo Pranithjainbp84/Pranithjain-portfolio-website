@@ -67,7 +67,7 @@ h1, h2, h3 {
 }
 
 .about-left img {
-    max-width: 100px; /* Reduced size */
+    max-width: 120px; /* Increased size */
     border-radius: 10px;
     float: left; /* Align to left */
     margin-right: 20px;
@@ -101,10 +101,6 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .about-left img {
-        max-width: 80px; /* Further reduce size for mobile */
-    }
-
     nav ul {
         flex-direction: column;
         position: absolute;
@@ -122,5 +118,17 @@ footer {
     nav .hamburger {
         display: block;
         cursor: pointer;
+    }
+
+    .about-left img {
+        max-width: 100px; /* Adjust size for mobile */
+    }
+
+    #introduction h1 {
+        font-size: 24px;
+    }
+
+    #introduction h2 {
+        font-size: 20px;
     }
 }
