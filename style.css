@@ -130,6 +130,60 @@ nav ul li a:hover {
     display: block;
 }
 
+/* ----------EDUCATION---------- */
+#education {
+    padding: 50px 0;
+    background: rgba(30, 30, 30, 0.9); /* Dark background */
+    color: #cccccc; /* Light gray */
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #ffffff; /* White for the heading */
+}
+
+.tab-contents ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+.tab-contents li {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%; /* Adjust as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.tab-contents li:hover {
+    transform: translateY(-5px);
+    background: rgba(100, 100, 100, 0.7); /* Gray on hover */
+}
+
+.tab-contents li span {
+    font-weight: bold; /* Make the year bold */
+    color: #ffffff; /* White for the year */
+}
+
+.tab-contents li br {
+    margin: 5px 0; /* Space out line breaks */
+}
+
+/* Responsive Styles for Education Section */
+@media only screen and (max-width: 600px) {
+    .tab-contents li {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+
 /* ----------SERVICES---------- */
 #services {
     padding: 30px 0;
