@@ -3,173 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Pranith Jain BP</title>
+    <title>Pranith Jain BP - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="snow-container"></div>
-        <div class="background-image"></div>
-        <div class="container">
-            <nav>
-                <img src="" class="logo" alt="Logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times"></i>
-                </ul>
-                <i class="fas fa-bars"></i>
-            </nav>
-            <div class="header-text">
-                <p>IT Support Specialist</p>
-                <h1>Hi, I'm <span>Pranith Jain</span><br>from India</h1>
-            </div>
+    <header>
+        <nav>
+            <div class="logo">Pranith Jain BP</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Pranith Jain</span></h1>
+            <p>IT Support Specialist from India</p>
         </div>
-    </div>
+    </header>
 
-    <!-- ----------ABOUT---------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif" alt="About Me">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Enthusiastic IT Support Specialist dedicated to delivering exceptional technical assistance and problem resolution. 
-                    Proficient in managing IT support systems, email solutions, and cybersecurity measures, I thrive in dynamic environments, adept at adapting to new technologies swiftly.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>IT Support:</span> Expertise in managing email systems and troubleshooting IT issues.</li>
-                            <li><span>Cybersecurity:</span> Knowledgeable in threat detection and incident response.</li>
-                            <li><span>Java:</span> Proficient in Core Java, JDBC, Maven projects, OOPs, and Collections.</li>
-                            <li><span>Front-End:</span> Skilled in HTML, CSS, and Responsive Design techniques.</li>
-                            <li><span>Databases:</span> Proficient in MySQL databases.</li>
-                            <li><span>Python:</span> Basic knowledge with an understanding of OOPs principles.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2019 - 2023:</span> B.E from Visvesvaraya Technological University <br>6.6 CGPA (Upto 7th sem)</li>
-                            <li><span>2019:</span> PUC from Pre-University Education <br>6.73 CGPA</li>
-                            <li><span>2017:</span> SSLC from Karnataka Secondary Education Examination Board <br>9.26 CGPA</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Enthusiastic IT Support Specialist dedicated to delivering exceptional technical assistance and problem resolution. Proficient in managing IT support systems, email solutions, and cybersecurity measures, I thrive in dynamic environments, adept at adapting to new technologies swiftly.</p>
+        <h3>Skills</h3>
+        <ul>
+            <li>IT Support: Managing email systems and troubleshooting IT issues.</li>
+            <li>Cybersecurity: Threat detection and incident response.</li>
+            <li>Java: Core Java, JDBC, Maven, OOPs, Collections.</li>
+            <li>Front-End: HTML, CSS, Responsive Design.</li>
+            <li>Databases: MySQL.</li>
+            <li>Python: Basic knowledge of OOPs principles.</li>
+        </ul>
+        <h3>Education</h3>
+        <ul>
+            <li>B.E from Visvesvaraya Technological University (2019 - 2023) - 6.6 CGPA (Up to 7th sem)</li>
+            <li>PUC from Pre-University Education (2019) - 6.73 CGPA</li>
+            <li>SSLC from Karnataka Secondary Education Examination Board (2017) - 9.26 CGPA</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>IT Support Specialist at Qubit Capital</h3>
+            <p>(Jul 2024 - Present)</p>
+            <p>Managed IT support and email systems, reducing spam issues by 30% and boosting email deliverability by 25%.</p>
         </div>
-    </div>
-
-    <!-- ----------EXPERIENCE---------- -->
-    <div id="experience">
-        <div class="container">
-            <h1 class="sub-title">Work Experience</h1>
-            <div class="services-list">
-                <div class="s">
-                    <span>Qubit Capital, Bengaluru, Karnataka</span><br>
-                    <strong>IT Support Specialist</strong> (Jul 2024 - Present)<br>
-                    <p>Managed IT support and email systems, reducing spam issues by 30% and boosting email deliverability by 25%. Implemented multilevel cold email outreach, enabling outreach to millions of clients.</p>
-                </div>
-                <div class="s">
-                    <span>Tracelay Networks, Bengaluru, Karnataka</span><br>
-                    <strong>Cyber Security Analyst Trainee</strong> (Jul 2024 - Present)<br>
-                    <p>Conducted analysis of security alerts leading to a 30% increase in threat detection. Overhauled cybersecurity strategies, resulting in a 20% gain in system security efficiency.</p>
-                </div>
-                <div class="s">
-                    <span>GlowTouch Technologies, Mysuru, Karnataka</span><br>
-                    <strong>Junior Support Engineer</strong> (Sep 2023 - Jul 2024)<br>
-                    <p>Addressed critical website and email support issues, achieving a 100% improvement in performance. Reduced security incidents by 40% through comprehensive malware analysis.</p>
-                </div>
-                <div class="s">
-                    <span>Tekworks, Bengaluru, Karnataka</span><br>
-                    <strong>Associate Software Developer (Intern)</strong> (Mar 2023 - Aug 2023)<br>
-                    <p>Contributed to backend development projects with Java, Python, and SQL, driving a 20% increase in software performance.</p>
-                </div>
-            </div>
+        <div class="job">
+            <h3>Cyber Security Analyst Trainee at Tracelay Networks</h3>
+            <p>(Jul 2024 - Present)</p>
+            <p>Increased threat detection by 30% through security alert analysis and improved system security efficiency by 20%.</p>
         </div>
-    </div>
-
-    <!-- ----------PROJECT EXPERIENCE---------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <h2>Employee Management System</h2>
-                    <p>Developed an intuitive system to efficiently record employee details, optimizing organizational processes.</p>
-                    <a href="https://github.com/Pranithjainbp84/Employee-Management"><i class="fas fa-external-link-alt"></i> View Project</a>
-                </div>
-                <div class="work">
-                    <h2>Arogya Hospital Information Management System</h2>
-                    <p>An application for maintaining patient information and medical records in hospitals and clinics.</p>
-                    <a href="https://github.com/Pranithjainbp84/Arogya-Hospital-Management-System"><i class="fas fa-external-link-alt"></i> View Project</a>
-                </div>
-                <div class="work">
-                    <h2>Twitter-Bot Detection using Machine Learning</h2>
-                    <p>Developed machine learning models to identify bot accounts on Twitter with over 95% accuracy.</p>
-                    <a href="https://github.com/Pranithjainbp84/Final-year-Project"><i class="fas fa-external-link-alt"></i> View Project</a>
-                </div>
-            </div>
-            <a href="https://github.com/Pranithjainbp84?tab=repositories" class="btn">See more</a>
+        <div class="job">
+            <h3>Junior Support Engineer at GlowTouch Technologies</h3>
+            <p>(Sep 2023 - Jul 2024)</p>
+            <p>Achieved 100% improvement in website and email support issues, reducing security incidents by 40%.</p>
         </div>
-    </div>
-
-    <!-- ----------CONTACT---------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> pranithjainbp84@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +91 8310386578</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/Pranithjainbp84"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/PranithJain84"><i class="fab fa-twitter"></i></a>
-                        <a href="https://pranithjain-resume.netlify.app/"><i class="fas fa-globe"></i></a>
-                        <a href="https://www.linkedin.com/in/pranith-jain-bp-a2704024b/"><i class="fab fa-linkedin"></i></a>
-                    </div>                    
-                    <a href="https://rxresu.me/pranithjainbp84/pranith-jain-bp" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="mailto:pranithjainbp84@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn3">Submit</button>
-                    </form>
-                </div>
-            </div>
+        <div class="job">
+            <h3>Associate Software Developer Intern at Tekworks</h3>
+            <p>(Mar 2023 - Aug 2023)</p>
+            <p>Contributed to backend projects using Java, Python, and SQL, enhancing software performance by 20%.</p>
         </div>
-    </div>
+    </section>
 
-    <script>
-        function openTab(tabName) {
-            const tabs = document.querySelectorAll('.tab-contents');
-            const links = document.querySelectorAll('.tab-links');
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Employee Management System</h3>
+            <p>Developed an intuitive system to efficiently record employee details.</p>
+            <a href="https://github.com/Pranithjainbp84/Employee-Management" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="project">
+            <h3>Arogya Hospital Information Management System</h3>
+            <p>An application for maintaining patient information and medical records.</p>
+            <a href="https://github.com/Pranithjainbp84/Arogya-Hospital-Management-System" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="project">
+            <h3>Twitter-Bot Detection using Machine Learning</h3>
+            <p>Developed models to identify bot accounts on Twitter with over 95% accuracy.</p>
+            <a href="https://github.com/Pranithjainbp84/Final-year-Project" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </section>
 
-            tabs.forEach(tab => {
-                tab.classList.remove('active-tab');
-            });
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:pranithjainbp84@gmail.com">pranithjainbp84@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918310386578">+91 8310386578</a></p>
+        <div class="social-icons">
+            <a href="https://github.com/Pranithjainbp84" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/PranithJain84" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/pranith-jain-bp-a2704024b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="https://rxresu.me/pranithjainbp84/pranith-jain-bp" class="btn" download>Download CV</a>
+    </section>
 
-            links.forEach(link => {
-                link.classList.remove('active-link');
-            });
-
-            document.getElementById(tabName).classList.add('active-tab');
-            event.target.classList.add('active-link');
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 Pranith Jain BP. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
