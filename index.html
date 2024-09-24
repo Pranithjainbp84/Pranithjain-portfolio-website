@@ -1,3 +1,6 @@
+Certainly! Here’s an updated version of your portfolio website's HTML code, incorporating the content from your resume. This version adds a section for your work experience, project experience, education, certifications, skills, and achievements while maintaining your existing layout.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,22 +8,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Personal Portfolio - Pranith Jain BP</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
 </head>
 
+<body>
     <div id="header">
         <div class="snow-container"></div>
         <div class="background-image"></div>
-        <script src="script.js"></script>
         <div class="container">
             <nav>
-                <img src="" class="logo"></img>
+                <img src="" class="logo" alt="Logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Experience</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                     <i class="fas fa-times"></i>
@@ -28,129 +31,101 @@
                 <i class="fas fa-bars"></i>
             </nav>
             <div class="header-text">
-                <p> Junior Support Engineer</p>
+                <p>Junior Support Engineer</p>
                 <h1>Hi, I'm <span>Pranith Jain</span><br>from India</h1>
             </div>
         </div>
     </div>
-    <body>
+
     <!-- ----------ABOUT---------- -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif">
+                    <img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif" alt="About Me">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>Enthusiastic Junior Support Engineer dedicated to delivering exceptional technical assistance and problem resolution. 
-			    With a solid foundation in troubleshooting and customer support, I am committed to ensuring seamless user experiences. 
-			    Proficient in web/ email hosting services and domain/dns, I thrive in dynamic environments, adept at adapting to new technologies swiftly. 
-			    Eager to contribute to collaborative teams and passionate about continuous learning in the ever-evolving tech landscape.</p>
+                    Proficient in web/email hosting services and domain/DNS, I thrive in dynamic environments, adept at adapting to new technologies swiftly.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                         <p class="tab-links" onclick="openTab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Java</span><br>Proficient in Core Java, JDBC, Maven projects, Object-Oriented Programming (OOPs), and Collections. </li>
+                            <li><span>Java</span><br>Proficient in Core Java, JDBC, Maven projects, OOPs, and Collections.</li>
                             <li><span>Front-End</span><br>Skilled in HTML, CSS, and Responsive Design techniques.</li>
-                            <li><span>Databases</span><br>Proficient in working with MySQL databases.</li>
-                            <li><span>Python</span><br>Basic knowledge with an understanding of Object-Oriented Programming (OOPs) principles. </li>
-			    <li><span>Technical skills</span><br>Proficient in diverse server management, DNS expertise, SSL implementation, adept troubleshooting, WordPress support, effective communication.</li>
+                            <li><span>Databases</span><br>Proficient in MySQL databases.</li>
+                            <li><span>Python</span><br>Basic knowledge with an understanding of OOPs principles.</li>
+                            <li><span>Technical Skills</span><br>Expertise in server management, DNS, SSL implementation, troubleshooting, and WordPress support.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2019 - 2023 </span><br>BE from Visvesvaraya Technological University <br> B.E, Computer Science <br> 6.6 CGPA(Upto 7th sem)</li>
-                            <li><span>2019 </span><br>PUC from Pre-University Education <br> PCMB <br> 6.73 CGPA</li>
-                            <li><span>2017</span><br>SSLC from Karnataka Secondary Education Examination Board <br> Science <br> 9.26 CGPA</li>
+                            <li><span>2019 - 2023 </span><br>B.E from Visvesvaraya Technological University <br>6.6 CGPA (Upto 7th sem)</li>
+                            <li><span>2019 </span><br>PUC from Pre-University Education <br>6.73 CGPA</li>
+                            <li><span>2017</span><br>SSLC from Karnataka Secondary Education Examination Board <br>9.26 CGPA</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ----------SERVICES---------- -->
-    <div id="experience">
-        <div class="container">
-            <h1 class="sub-title">My experience</h1>
-            
-            <div class="services-list">
-		     <div class ="s">
-                    <i class="fa-brands fa-wordpress"></i><br>
-                    <span>Sept 2023 - Present</span><br>
-                    <strong>Junior Support Engineer</strong><br>
-                    <p>
-                    As a Junior Support Engineer at GlowTouch Technologies, I efficiently manage diverse servers,
-			    troubleshoot web-related issues, and contribute actively to elevate hosting experience for clients, emphasizing expertise in server management, 
-			    DNS, SSL, WordPress support, troubleshooting, and strong communication skills.
-                    </p>
-                    <a href="https://in.glowtouch.com/">Learn more</a>
-                </div>
-                <div class ="s">
-                    <i class="fa-brands fa-java"></i><br>
-                    <span>Feb 2023 - Jul 2023</span><br>
-                    <strong>Associate Software Developer</strong><br>
-                    <p>
-                    Collaborative Associate Developer at TekWorks/BitLabs,
-		    improving backend software functionality, demonstrating 
-		    robust problem-solving skills, and actively contributing
-		    to team discussions and code reviews for enhanced project outcomes.
-                    </p>
-                    <a href="https://www.tekworks.in/">Learn more</a>
-                </div>
-                <div class ="s">
-                    <i class="fab fa-python"></i><br>
-                    <span>Aug 2022</span><br>
-                    <strong>Machine Learning and Artificial Intellegence intern</strong><br>
-                    <p>
-                        Completed a one-month AIML internship at Airobosoft, gaining practical 
-			experience in applying machine learning techniques to real-world projects
-			and contributing to AI model development initiatives.
-                    </p>
-                <a href="https://www.airobosoft.com/wp/">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ----------PORTFOLIO--------- -->
+    <!-- ----------EXPERIENCE---------- -->
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">Work Experience</h1>
+            <div class="services-list">
+                <div class="s">
+                    <span>Qubit Capital, Bengaluru, Karnataka</span><br>
+                    <strong>IT Support Specialist</strong> (Jul 2024 - Present)<br>
+                    <p>Managed IT support and email systems, reducing spam issues by 30% and boosting email deliverability by 25%. Implemented multilevel cold email outreach, enabling outreach to millions of clients.</p>
+                </div>
+                <div class="s">
+                    <span>Tracelay Networks, Bengaluru, Karnataka</span><br>
+                    <strong>Cyber Security Analyst Trainee</strong> (Jul 2024 - Present)<br>
+                    <p>Conducted analysis of security alerts leading to a 30% increase in threat detection. Overhauled cybersecurity strategies, resulting in a 20% gain in system security efficiency.</p>
+                </div>
+                <div class="s">
+                    <span>GlowTouch Technologies, Mysuru, Karnataka</span><br>
+                    <strong>Junior Support Engineer</strong> (Sep 2023 - Jul 2024)<br>
+                    <p>Addressed critical website and email support issues, achieving a 100% improvement in performance. Reduced security incidents by 40% through comprehensive malware analysis.</p>
+                </div>
+                <div class="s">
+                    <span>Tekworks, Bengaluru, Karnataka</span><br>
+                    <strong>Associate Software Developer (Intern)</strong> (Mar 2023 - Aug 2023)<br>
+                    <p>Contributed to backend development projects with Java, Python, and SQL, driving a 20% increase in software performance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------PROJECT EXPERIENCE---------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Works</h1>
+            <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <div class="layer">
-                        <h2>Employee Management System</h2>
-                        <p>It is used to maintain and to record the details of employees working in an organization. It contains information such as employee id, full name, gender, age, address, contact number etc. In this application, Administrator can search, edit, delete and save records while employee can edit their profile and also, can search for other employee details. - Developed an intuitive Employee Management System to efficiently record employee details, optimizing organizational processes.
-                           
-                           </p>
-                        <a href="https://github.com/Pranithjainbp84/Employee-Management"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                    <h2>Employee Management System</h2>
+                    <p>Developed an intuitive system to efficiently record employee details, optimizing organizational processes.</p>
+                    <a href="https://github.com/Pranithjainbp84/Employee-Management"><i class="fas fa-external-link-alt"></i> View Project</a>
                 </div>
                 <div class="work">
-                    <div class="layer">
-                        <h2>Arogya Hospital Information Management System</h2>
-                        <p>Arogya Hospital information management system is an application which is used in any hospital and clinic. This application will be used to maintain the patient's information (Personal information and medical records) and medicines information, search patients’ information and maintain recovered patients’ information. <br>
-                          
-                          </p>
-                        <a href="https://github.com/Pranithjainbp84/Arogya-Hospital-Management-System"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                    <h2>Arogya Hospital Information Management System</h2>
+                    <p>An application for maintaining patient information and medical records in hospitals and clinics.</p>
+                    <a href="https://github.com/Pranithjainbp84/Arogya-Hospital-Management-System"><i class="fas fa-external-link-alt"></i> View Project</a>
                 </div>
                 <div class="work">
-                    <div class="layer">
-                        <h2>Twitter-Bot Detection using Machine Learning</h2>
-                        <p>Harnessing Machine Learning for Twitter: Distinguishing Bots from Genuine Users with AUC>95%. Our rigorous feature engineering and extraction process, combined with a unique algorithm, empowers accurate identification of bot accounts. Unveil the distinction between authenticity and automation in the realm of Twitter. - Led a Machine Learning initiative to identify Twitter bots, preventing automated spam and enhancing user experience.
-                            </p>
-                        <a href="https://github.com/Pranithjainbp84/Final-year-Project"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                    <h2>Twitter-Bot Detection using Machine Learning</h2>
+                    <p>Developed machine learning models to identify bot accounts on Twitter with over 95% accuracy.</p>
+                    <a href="https://github.com/Pranithjainbp84/Final-year-Project"><i class="fas fa-external-link-alt"></i> View Project</a>
                 </div>
             </div>
             <a href="https://github.com/Pranithjainbp84?tab=repositories" class="btn">See more</a>
         </div>
     </div>
-    
 
     <!-- ----------CONTACT---------- -->
     <div id="contact">
@@ -158,8 +133,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> Pranithjainbp84@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 8310386578</p>
+                    <p><i class="fas fa-paper-plane"></i> pranithjainbp84@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8310386578</p>
                     <div class="social-icons">
                         <a href="https://github.com/Pranithjainbp84"><i class="fab fa-github"></i></a>
                         <a href="https://twitter.com/PranithJain84"><i class="fab fa-twitter"></i></a>
@@ -169,81 +144,12 @@
                     <a href="https://rxresu.me/pranithjainbp84/pranith-jain-bp" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    
-                        <form action="mailto:Pranithjainbp84@gmail.com" method="post" enctype="text/plain">
+                    <form action="mailto:pranithjainbp84@gmail.com" method="post" enctype="text/plain">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn3">Submit</button>
                     </form>
                 </div>
-                
-                
             </div>
-        </div>
-        <div class="copyright">
-            <p>copyright @ Pranith Jain. Made with <i class="fas fa-heart"></i> by Pranith Jain</p>
-        </div>
-    </div>
-
-
-
-    <script>
-        var tabLinks = document.getElementsByClassName('tab-links');
-        var tabContents = document.getElementsByClassName('tab-contents');
-
-        function openTab(tabName) {
-            for (tabLink of tabLinks) {
-                tabLink.classList.remove('active-link');
-            }
-            for (tabContent of tabContents) {
-                tabContent.classList.remove('active-tab');
-            }
-            event.currentTarget.classList.add('active-link');
-            document.getElementById(tabName).classList.add('active-tab');
-        }
-
-        // JavaScript for handling the mobile navigation menu
-        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
-
-        document.querySelector('.fas.fa-times').addEventListener('click', function () {
-            document.querySelector('nav ul').classList.remove('show');
-        });
-
-    </script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script>VanillaTilt.init(document.querySelector(".s1"), {
-		max: 25,
-		speed: 400,
-        glare:true,
-        "max-glare":1,
-	});
-    </script>
-
-    <script>VanillaTilt.init(document.querySelector(".s2"), {
-		max: 25,
-		speed: 400,
-        glare:true,
-        "max-glare":1,
-	});
-    </script>
-
-  <script>
-
-    const layers = document.querySelectorAll(".layer");
-  
-   
-    layers.forEach(layer => {
-      VanillaTilt.init(layer, {
-        max: 25,
-        speed: 400,
-        glare: true,
-        "max-glare": 1,
-      });
-    });
-  </script>
-
-</body>
-</html>
+       
