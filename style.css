@@ -1,367 +1,101 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background: radial-gradient(#1a1a1a, #2c2c2c);
-    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.container {
-    padding: 10px 5%;
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 140px;
+    align-items: center;
+    padding: 0 20px;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
 }
 
 nav ul li {
-    margin: 10px 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #cccccc; /* Light gray */
+nav a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffffff; /* White */
-}
-
-.header-text {
-    margin-top: 20%;
-    font-size: 30px;
-    text-align: center;
 }
 
 .header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 2.5rem;
 }
 
-.header-text h1 span {
-    color: rgb(180, 180, 180);
+.header-text span {
+    font-weight: bold;
 }
 
-/* ----------ABOUT---------- */
-#about {
-    padding: 50px 0;
-    background: rgba(30, 30, 30, 0.9); /* Dark background */
-    color: #cccccc; /* Light gray */
-}
-
-#about h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 36px;
-    color: #ffffff; /* White for the heading */
-}
-
-#about p {
-    max-width: 800px; /* Max width for readability */
-    margin: 0 auto; /* Center align */
-    line-height: 1.6; /* Improved readability */
-    padding: 0 20px; /* Padding for small screens */
-}
-
-/* ----------EDUCATION---------- */
-#education {
-    padding: 50px 0;
-    background: rgba(30, 30, 30, 0.9); /* Dark background */
-    color: #cccccc; /* Light gray */
-}
-
-#education h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 36px;
-    color: #ffffff; /* White for the heading */
-}
-
-.tab-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align items */
-}
-
-.tab-contents ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-}
-
-.tab-contents li {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border-radius: 15px;
+section {
     padding: 20px;
-    margin: 10px 0;
-    width: 80%; /* Adjust as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, background 0.3s;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tab-contents li:hover {
-    transform: translateY(-5px);
-    background: rgba(100, 100, 100, 0.7); /* Gray on hover */
-}
-
-.tab-contents li span {
-    font-weight: bold; /* Make the year bold */
-    color: #ffffff; /* White for the year */
-}
-
-.tab-contents li br {
-    margin: 5px 0; /* Space out line breaks */
-}
-
-/* ----------SERVICES---------- */
-#services {
-    padding: 30px 0;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div {
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div:hover {
-    background-color: rgba(100, 100, 100, 0.7); /* Gray */
-    transform: translateY(-10px);
-}
-
-/* ----------CONTACT---------- */
-#contact {
-    padding: 50px 0;
-    background: rgba(30, 30, 30, 0.9);
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 36px;
-    color: #cccccc; /* Light gray */
-}
-
-.contact-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact-left {
-    flex-basis: 40%;
-    padding: 20px;
-}
-
-.contact-left p {
-    margin-bottom: 20px;
-}
-
-.contact-right {
-    flex-basis: 55%;
-}
-
-.contact-right form {
-    width: 100%;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626; /* Darker gray */
-    padding: 15px;
-    margin: 10px 0;
-    color: #ffffff; /* White */
-    font-size: 16px;
-    border-radius: 6px;
-}
-
-form input:focus,
-form textarea:focus {
-    background: #333; /* Darker gray */
-    border: 1px solid #cccccc; /* Light gray */
-}
-
-.btn.btn2 {
-    margin-top: 20px;
-}
-
-/* ----------PROJECTS---------- */
-#projects {
-    padding: 50px 0;
-    background: rgba(30, 30, 30, 0.9); /* Dark background */
-}
-
-#projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 36px;
-    color: #ffffff; /* White for the heading */
-}
-
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
-    gap: 30px;
-}
-
-.project {
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-}
-
-.project-info {
-    padding: 15px; /* Adjusted padding */
-}
-
-.project-info h3 {
-    margin-bottom: 10px;
-    font-size: 22px; /* Slightly smaller */
-    color: #ffffff; /* White text */
-}
-
-.project-info p {
+h2 {
     margin-bottom: 15px;
-    color: #cccccc; /* Light gray text */
 }
 
-.btn.btn3 {
-    display: inline-block;
+h3 {
     margin-top: 10px;
-    font-size: 14px; /* Smaller link size */
-    padding: 8px 12px; /* Adjusted padding */
-    background: #b54768; /* Link background color */
-    color: #ffffff; /* White text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
 }
 
-.btn.btn3:hover {
-    background: #a13554; /* Darker shade on hover */
+ul {
+    list-style-type: none;
 }
 
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
-    #header {
-        background-image: url('images/phone-background.png');
-    }
-
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul.show {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        padding-top: 50px;
-        background: #333; /* Dark gray */
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .services-list {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .project-info h3 {
-        font-size: 20px;
-    }
-
-    form input,
-    form textarea {
-        font-size: 14px;
-    }
-
-    #projects h2 {
-        font-size: 30px; /* Smaller heading */
-    }
-
-    .project-info h3 {
-        font-size: 20px; /* Smaller project title */
-    }
-
-    .btn.btn3 {
-        font-size: 12px; /* Even smaller link size for mobile */
-    }
+.job, .project {
+    margin: 10px 0;
 }
 
-/* Snowflake Animation */
-.snowflake {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: radial-gradient(circle, rgba(80, 80, 80, 0) 0%, rgba(0, 0, 0, 0.7) 70%, rgba(255, 0, 0, 0) 100%);
-    border-radius: 50%;
-    animation: snowfall 0.5s linear infinite;
+.project a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-@keyframes snowfall {
-    to {
-        transform: translateY(100vh);
-    }
+.project a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
