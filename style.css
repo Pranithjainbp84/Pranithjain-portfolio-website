@@ -72,62 +72,30 @@ nav ul li a:hover {
 
 /* ----------ABOUT---------- */
 #about {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-1 {
-    flex-basis: 35%;
-}
-
-.about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2 {
-    flex-basis: 60%;
-}
-
-.sub-title {
-    font-size: 60px;
-    font-weight: 600;
+    padding: 50px 0;
+    background: rgba(30, 30, 30, 0.9); /* Dark background */
     color: #cccccc; /* Light gray */
 }
 
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
+#about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #ffffff; /* White for the heading */
 }
 
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    color: #cccccc; /* Light gray */
+#about p {
+    max-width: 800px; /* Max width for readability */
+    margin: 0 auto; /* Center align */
+    line-height: 1.6; /* Improved readability */
+    padding: 0 20px; /* Padding for small screens */
 }
 
-.tab-links.active-link {
-    color: #ffffff; /* White */
-}
-
-.tab-links.active-link::after {
-    width: 50%;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
+/* Responsive Styles for About Section */
+@media only screen and (max-width: 600px) {
+    #about p {
+        padding: 0 10px; /* Less padding on smaller screens */
+    }
 }
 
 /* ----------EDUCATION---------- */
