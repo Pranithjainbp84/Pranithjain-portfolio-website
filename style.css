@@ -157,59 +157,110 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-/* ----------PORTFOLIO---------- */
-#portfolio {
-    padding: 50px 0;
-}
-
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 60px;
-    margin-top: 100px;
-}
-
-.work {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    height: 600px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    text-align: justify;
-}
-
 /* ----------CONTACT---------- */
-.contact-left {
-    flex-basis: 35%;
+#contact {
+    padding: 50px 0;
+    background: rgba(30, 30, 30, 0.8);
 }
 
-.contact-right {
-    flex-basis: 60%;
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    flex-basis: 40%;
+    padding: 20px;
 }
 
 .contact-left p {
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.social-icons a {
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    transition: color 0.5s, transform 0.5s;
+.contact-right {
+    flex-basis: 55%;
 }
 
-.social-icons a:hover {
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.btn.btn2 {
+    margin-top: 20px;
+}
+
+/* ----------PROJECTS---------- */
+#projects {
+    padding: 50px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project:hover {
     transform: translateY(-5px);
 }
 
-.btn {
-    margin: 50px auto;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.75s;
+.project img {
+    width: 100%;
+    height: auto;
 }
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+}
+
+.btn.btn3 {
+    display: inline-block;
+    margin-top: 10px;
+}
+
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
