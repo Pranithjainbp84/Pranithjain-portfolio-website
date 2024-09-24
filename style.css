@@ -57,6 +57,11 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
+#introduction {
+    text-align: center;
+    padding: 40px 0;
+}
+
 #about, #experience, #portfolio, #certifications, #contact {
     padding: 40px 0;
 }
@@ -119,4 +124,3 @@ footer {
         cursor: pointer;
     }
 }
-``
