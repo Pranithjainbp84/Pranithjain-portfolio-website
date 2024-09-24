@@ -91,13 +91,6 @@ nav ul li a:hover {
     padding: 0 20px; /* Padding for small screens */
 }
 
-/* Responsive Styles for About Section */
-@media only screen and (max-width: 600px) {
-    #about p {
-        padding: 0 10px; /* Less padding on smaller screens */
-    }
-}
-
 /* ----------EDUCATION---------- */
 #education {
     padding: 50px 0;
@@ -112,12 +105,15 @@ nav ul li a:hover {
     color: #ffffff; /* White for the heading */
 }
 
-.tab-contents ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+.tab-contents {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center align items */
+}
+
+.tab-contents ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
 }
 
 .tab-contents li {
@@ -143,14 +139,6 @@ nav ul li a:hover {
 .tab-contents li br {
     margin: 5px 0; /* Space out line breaks */
 }
-
-/* Responsive Styles for Education Section */
-@media only screen and (max-width: 600px) {
-    .tab-contents li {
-        width: 90%; /* Full width on smaller screens */
-    }
-}
-
 
 /* ----------SERVICES---------- */
 #services {
@@ -303,21 +291,6 @@ form textarea:focus {
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
-    #projects h2 {
-        font-size: 30px; /* Smaller heading */
-    }
-
-    .project-info h3 {
-        font-size: 20px; /* Smaller project title */
-    }
-
-    .btn.btn3 {
-        font-size: 12px; /* Even smaller link size for mobile */
-    }
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 600px) {
     #header {
         background-image: url('images/phone-background.png');
     }
@@ -363,19 +336,15 @@ form textarea:focus {
     form textarea {
         font-size: 14px;
     }
-}
 
-.snowflake {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: radial-gradient(circle, rgba(80, 80, 80, 0) 0%, rgba(0, 0, 0, 0.7) 70%, rgba(255, 0, 0, 0) 100%);
-    border-radius: 50%;
-    animation: snowfall 0.5s linear infinite;
-}
-
-@keyframes snowfall {
-    to {
-        transform: translateY(100vh);
+    #projects h2 {
+        font-size: 30px; /* Smaller heading */
     }
-}
+
+    .project-info h3 {
+        font-size: 20px; /* Smaller project title */
+    }
+
+    .btn.btn3 {
+        font-size: 12px; /* Even smaller link size for mobile */
+    }
