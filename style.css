@@ -6,7 +6,7 @@
 }
 
 body {
-    background: radial-gradient(#000000, #3e454c);
+    background: radial-gradient(#1a1a1a, #2c2c2c);
     color: #ffffff;
 }
 
@@ -16,10 +16,11 @@ body {
     background-image: url('https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px 5%;
 }
 
 nav {
@@ -43,30 +44,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00c1ff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transition: color 0.3s;
 }
 
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: rgba(154, 154, 154, 0.7);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: width 0.5s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
+nav ul li a:hover {
+    color: #ff4081;
 }
 
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    text-align: center;
 }
 
 .header-text h1 {
@@ -105,7 +97,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #00c1ff;
 }
 
 .tab-titles {
@@ -119,6 +111,11 @@ nav ul li a:hover::after {
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #00c1ff;
+}
+
+.tab-links.active-link {
+    color: #ff4081;
 }
 
 .tab-links.active-link::after {
@@ -160,13 +157,14 @@ nav ul li a:hover::after {
 /* ----------CONTACT---------- */
 #contact {
     padding: 50px 0;
-    background: rgba(30, 30, 30, 0.8);
+    background: rgba(30, 30, 30, 0.9);
 }
 
 #contact h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
+    color: #00c1ff;
 }
 
 .contact-row {
@@ -200,9 +198,16 @@ form textarea {
     background: #262626;
     padding: 15px;
     margin: 10px 0;
-    color: #fff;
+    color: #00c1ff;
     font-size: 16px;
     border-radius: 6px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    background: #333;
+    border: 1px solid #00c1ff;
 }
 
 .btn.btn2 {
@@ -218,6 +223,7 @@ form textarea {
     text-align: center;
     margin-bottom: 30px;
     font-size: 36px;
+    color: #00c1ff;
 }
 
 .project-list {
@@ -259,8 +265,17 @@ form textarea {
 .btn.btn3 {
     display: inline-block;
     margin-top: 10px;
+    color: #00c1ff;
+    border: 1px solid #00c1ff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
 }
 
+.btn.btn3:hover {
+    background: #00c1ff;
+    color: #000;
+}
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
@@ -299,6 +314,15 @@ form textarea {
 
     .services-list {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
     }
 }
 
